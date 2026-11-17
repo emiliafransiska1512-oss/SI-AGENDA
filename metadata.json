@@ -1,0 +1,8 @@
+{
+  "name": "SI-AGENDA CANDI",
+  "description": "Sistem Informasi & Ekstraksi Agenda Pimpinan Terintegrasi Kecamatan Candi, Kabupaten Sidoarjo (Versi 2.0)",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
