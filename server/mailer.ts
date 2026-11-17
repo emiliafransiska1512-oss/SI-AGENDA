@@ -11,7 +11,7 @@ function escapeHtml(text: string): string {
 
 function getLeaderLabel(id: string): string {
   const found = LEADERS.find((l) => l.id === id);
-  return found ? `${found.id} (${found.nama})` : id || 'Belum Ditunjuk';
+  return found ? found.jabatan : id || 'Belum Ditunjuk';
 }
 
 export function buildDigestHtml(params: {

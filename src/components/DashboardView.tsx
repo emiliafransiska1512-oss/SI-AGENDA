@@ -502,7 +502,7 @@ export function DashboardView({
                     <div className="font-semibold text-slate-900 truncate">
                       {leader.id}
                     </div>
-                    <div className="text-slate-500 truncate">{leader.nama}</div>
+                    <div className="text-slate-500 truncate">{leader.jabatan}</div>
                   </div>
                   <div className="flex items-center gap-2 shrink-0">
                     {leader.conflictCount > 0 && (

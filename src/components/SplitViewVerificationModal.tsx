@@ -443,7 +443,7 @@ export function SplitViewVerificationPanel({
                 <option value="">-- Belum Didisposisi --</option>
                 {LEADERS.map((l) => (
                   <option key={l.id} value={l.id}>
-                    {l.id} — {l.nama}
+                    {l.id} — {l.jabatan}
                   </option>
                 ))}
               </select>
@@ -503,7 +503,7 @@ export function SplitViewVerificationPanel({
                   <option value="">-- Pilih Pejabat Pengganti --</option>
                   {LEADERS.filter((l) => l.id !== form.pejabatId).map((l) => (
                     <option key={l.id} value={l.id}>
-                      {l.id} — {l.nama}
+                      {l.id} — {l.jabatan}
                     </option>
                   ))}
                 </select>

@@ -111,7 +111,7 @@ export function SettingsView({ settings, onSaveSettings }: SettingsViewProps) {
 
           <div>
             <label className="block font-medium text-slate-700 mb-1">
-              Nama Camat Definitif
+              Jabatan Pimpinan Wilayah
             </label>
             <input
               type="text"
@@ -293,10 +293,10 @@ export function SettingsView({ settings, onSaveSettings }: SettingsViewProps) {
               <div key={l.id} className="py-2.5 flex items-center justify-between gap-2">
                 <div>
                   <div className="font-semibold text-slate-900">
-                    {l.id} — {l.nama}
+                    {l.id} — {l.jabatan}
                   </div>
                   <div className="text-slate-500">
-                    NIP {l.nip} · {l.seksi}
+                    {l.seksi}
                   </div>
                 </div>
                 <span className="font-mono text-[11px] text-slate-600">

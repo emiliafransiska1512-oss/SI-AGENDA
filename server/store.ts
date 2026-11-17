@@ -450,7 +450,7 @@ function createInitialState(): DatabaseState {
     namaInstansi: 'Kantor Kecamatan Candi',
     kabupaten: 'Pemerintah Kabupaten Sidoarjo',
     alamatKantor: 'Jl. Raya Candi No. 12, Kec. Candi, Kabupaten Sidoarjo, Jawa Timur 61271',
-    namaCamat: 'H. Ahmad Fauzi, S.STP., M.Si.',
+    namaCamat: 'Camat Candi',
     autoDigestEnabled: true,
     digestTime: '06:30',
     digestRecipients: [
@@ -505,6 +505,9 @@ export function loadDatabase(): DatabaseState {
     const raw = fs.readFileSync(DB_FILE, 'utf-8');
     const parsed = JSON.parse(raw) as DatabaseState;
     parsed.agendas = recomputeConflicts(parsed.agendas || []);
+    if (parsed.settings?.namaCamat === 'H. Ahmad Fauzi, S.STP., M.Si.') {
+      parsed.settings.namaCamat = 'Camat Candi';
+    }
     return parsed;
   } catch (err) {
     console.error('Failed to load DB, initializing fresh state:', err);

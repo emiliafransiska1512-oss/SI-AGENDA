@@ -63,7 +63,7 @@ export default function App() {
     namaInstansi: 'Kantor Kecamatan Candi',
     kabupaten: 'Pemerintah Kabupaten Sidoarjo',
     alamatKantor: 'Jl. Raya Candi No. 12, Kec. Candi, Kabupaten Sidoarjo',
-    namaCamat: 'H. Ahmad Fauzi, S.STP., M.Si.',
+    namaCamat: 'Camat Candi',
     autoDigestEnabled: true,
     digestTime: '06:30',
     digestRecipients: [],

@@ -193,7 +193,7 @@ export function DisposisiView({
                         <option value="">-- Tugaskan Pejabat --</option>
                         {LEADERS.map((l) => (
                           <option key={l.id} value={l.id}>
-                            {l.id} — {l.nama}
+                            {l.id} — {l.jabatan}
                           </option>
                         ))}
                       </select>
@@ -253,7 +253,7 @@ export function DisposisiView({
                         active ? 'text-slate-200' : 'text-slate-500'
                       }`}
                     >
-                      {leader.nama}
+                      {leader.jabatan}
                     </div>
                   </div>
                   <div className="flex items-center gap-1.5 shrink-0">
@@ -283,7 +283,7 @@ export function DisposisiView({
                 Daftar Penugasan: {selectedLeaderTab}
               </h3>
               <p className="text-xs text-slate-500">
-                {LEADERS.find((l) => l.id === selectedLeaderTab)?.nama} ·{' '}
+                {LEADERS.find((l) => l.id === selectedLeaderTab)?.jabatan} ·{' '}
                 {LEADERS.find((l) => l.id === selectedLeaderTab)?.seksi}
               </p>
             </div>
